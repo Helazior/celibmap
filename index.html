@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="author" content="Clément Gindrier" />
+    <title>Célib' Map : Statistiques des couples et célibataires</title>
+    <meta
+      name="description"
+      content="Statistiques sur les couples et les célibataires, canton par canton : concurrence, âges, familles, revenus. Carte interactive selon votre sexe et votre âge, données Insee."
+    />
+    <link rel="icon" href="https://celibmap.fr/favicon.svg" type="image/svg+xml" />
+    <!-- Préchargement des trois fichiers dont la carte a besoin : le téléchargement démarre avec
+         le HTML au lieu d'attendre le boot du JS (les chemins sont relatifs à la base du site). -->
+    <!-- `crossorigin` obligatoire pour matcher le fetch() du JS, sinon tout est téléchargé deux fois. -->
+    <link rel="preload" href="data/index.json" as="fetch" crossorigin />
+    <link rel="preload" href="data/grid.json" as="fetch" crossorigin />
+    <link rel="preload" href="map/france.topojson" as="fetch" crossorigin />
+    <link rel="canonical" href="https://celibmap.fr/" />
+    <!-- Open Graph : une seule image pour tout le site — l'état vit dans le fragment (#h/26/…),
+         invisible des crawlers ; une image par ville demanderait une page par unité (v2). -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Célib' Map" />
+    <meta property="og:title" content="Célib' Map : Statistiques des couples et célibataires" />
+    <meta
+      property="og:description"
+      content="Statistiques des couples et célibataires, canton par canton : concurrence, âges, familles, revenus, vote. Carte interactive selon votre sexe et votre âge, données Insee. Source : Insee, RP2022, fichiers détail."
+    />
+    <meta property="og:url" content="https://celibmap.fr/" />
+    <meta property="og:image" content="https://celibmap.fr/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="module" crossorigin src="/assets/index-CmYpPZQe.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-TPjSKXYX.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Deux cercles qui se recouvrent : les deux couleurs de l'échelle divergente du site. -->
+  <circle cx="37" cy="50" r="31" fill="#2b6cb0" fill-opacity="0.92"/>
+  <circle cx="63" cy="50" r="31" fill="#c53a6f" fill-opacity="0.72"/>
+</svg>
